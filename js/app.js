@@ -1,7 +1,23 @@
 
+let url = window.location.href;
+
+let swLocation = '/PWAJuan/sw.js';
+
+
 
 if(navigator.serviceWorker){
-   navigator.serviceWorker.register('./sw.js'); 
+    
+    if(url.includes('localhost')){
+        
+        navigator.serviceWorker.register('./sw.js');      
+        
+    }else{
+        navigator.serviceWorker.register(swLocation);
+        
+    }
+    
+    
+   
     
 }
 
