@@ -9,7 +9,7 @@ if(navigator.serviceWorker){
     
     if(url.includes('localhost')){
         
-        navigator.serviceWorker.register('./sw.js');      
+        navigator.serviceWorker.register('sw.js');      
         
     }else{
         navigator.serviceWorker.register(swLocation);

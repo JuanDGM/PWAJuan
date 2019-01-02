@@ -10,7 +10,7 @@ self.addEventListener('install', e=>{
     caches.open( CACHE_STATIC ).then(cache=>{
         
         const resStatic = cache.addAll([
-                '/',
+               // '/',
                 'index.html',
                 'css/style.css',
                 'img/avatars/spiderman.jpg',
